@@ -1,0 +1,63 @@
+
+        /**********************************************************
+         Method:         Find the equivalent number in fraction of inches
+         Purpose:        Create a new Fraction
+         Parameters:     Numbre deccimal
+         Preconditions:  None
+         Postconditions: fraction is a string with numerator and denominator 
+        
+         ***********************************************************/
+
+private String quebrado(double decimalInches){
+
+        String quebradoResultado = "";
+
+        if((decimalInches>=0.03125) && (decimalInches<=0.09374))
+            quebradoResultado="1/16";
+
+        if((decimalInches>=0.09375) && (decimalInches<=0.15624))
+            quebradoResultado="1/8";
+
+        if((decimalInches>=0.15625) && (decimalInches<=0.21874))
+            quebradoResultado="3/16";
+
+        if((decimalInches>=0.21875) && (decimalInches<=0.28124))
+            quebradoResultado="1/4";
+
+        if((decimalInches>=0.28125) && (decimalInches<=0.34374))
+            quebradoResultado="5/16";
+
+        if((decimalInches>=0.34375) && (decimalInches<=0.40624))
+            quebradoResultado="3/8";
+
+        if((decimalInches>=0.40625) && (decimalInches<=0.46874))
+            quebradoResultado="7/16";
+
+        if((decimalInches>=0.46875) && (decimalInches<=0.53124))
+            quebradoResultado="1/2";
+
+        if((decimalInches>=0.53125) && (decimalInches<=0.59374))
+            quebradoResultado="9/16";
+
+        if((decimalInches>=0.59375) && (decimalInches<=0.65624))
+            quebradoResultado="5/8";
+
+        if((decimalInches>=0.65625) && (decimalInches<=0.71874))
+            quebradoResultado="11/16";
+
+        if((decimalInches>=0.71875) && (decimalInches<=0.78124))
+            quebradoResultado="3/4";
+
+        if((decimalInches>=0.78125) && (decimalInches<=0.84374))
+            quebradoResultado="13/16";
+
+        if((decimalInches>=0.84375) && (decimalInches<=0.90624))
+            quebradoResultado="7/8";
+
+        if((decimalInches>=0.90625) && (decimalInches<=0.96874))
+            quebradoResultado="15/16";
+
+        return quebradoResultado;
+    }
+    
+    
